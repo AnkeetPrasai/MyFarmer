@@ -72,7 +72,7 @@ def get_text_in_region_and_process(device, x1, y1, x2, y2):
         return True
 
 
-def simulate_perimeter_touches(device, num_points=30):
+def simulate_perimeter_touches(device, num_points=20):
     """
     Simulates touches along diamond perimeter with natural variance
     """
@@ -148,6 +148,9 @@ def attack(device):
     
     # Simulate touches along diamond perimeter
     simulate_perimeter_touches(device)
+
+
+
     
     return False
 
